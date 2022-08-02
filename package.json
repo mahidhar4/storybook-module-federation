@@ -1,5 +1,5 @@
 {
-  "name": "storybook-module-federation",
+  "name": "storybook-module-federation-custom",
   "version": "0.6.2",
   "description": "Make your Storybook components available as federated modules",
   "main": "dist/main.js",
