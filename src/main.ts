@@ -20,7 +20,7 @@ export const withStorybookModuleFederation =
   (storybookConfig: StorybookConfigInput): StorybookConfigOutput => {
     const { webpackFinal = defaultConfig } = storybookConfig;
 
-    if (storybookConfig?.core?.builder !== 'webpack5') {
+    if (storybookConfig?.core?.builder?.indexOf('webpack5') > -1) {
       throw new Error(
         'Webpack 5 required: Configure Storybook to use the webpack5 builder'
       );
